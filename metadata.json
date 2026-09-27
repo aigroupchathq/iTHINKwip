@@ -1,0 +1,6 @@
+{
+  "name": "iTHINK Studio - Self-Observation & Cognitive Practice",
+  "description": "A human-led self-observation and cognitive practice lab with brief exercises, focused-work tools, neuroscience learning resources, and personal progress tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
