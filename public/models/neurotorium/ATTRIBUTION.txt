@@ -1,0 +1,5 @@
+The 3D brain atlas meshes and matcap texture in this directory are from Neurotorium, a resource owned by the Lundbeck Foundation.
+
+Source: https://neurotorium.org/tool/brain-atlas/
+
+Neurotorium's disclaimer states that its website content may be copied and used for personal and educational purposes when copyright and proprietary notices are retained. These assets are used here for educational purposes, and the source is credited in the experience.

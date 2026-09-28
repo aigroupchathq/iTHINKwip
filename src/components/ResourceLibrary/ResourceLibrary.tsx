@@ -62,7 +62,7 @@ EASY STEP-BY-STEP PRACTICE:
 ${protocol.steps.map((step, idx) => `[Step ${idx + 1}] ${step}`).join('\n\n')}
 
 A GENTLE REMINDER:
-Building new habits takes patience and self-compassion. Celebrate your small daily wins—each repetition makes positive change a little more natural.
+Building new habits takes patience and self-compassion. Celebrate your small daily wins. Each repetition makes positive change a little more natural.
 
 Need support? Reach out anytime at support@synapsync.org
 ========================================================================`;

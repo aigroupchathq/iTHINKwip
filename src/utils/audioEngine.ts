@@ -33,7 +33,7 @@ export const SOUND_PRESETS: Record<Exclude<SoundMode, 'off'>, SoundPreset> = {
     targetWave: 'Alpha Wave (Flow State)',
     frequencyDelta: 10,
     baseFreq: 220,
-    description: 'Helps your mind settle into a relaxed yet alert groove—ideal when you want to create without feeling rushed.',
+    description: 'Helps your mind settle into a relaxed yet alert groove, ideal when you want to create without feeling rushed.',
     benefits: 'Thoughtful writing, creative brainstorming, reading, and gentle focus.',
     suggestedDuration: '30 – 60 min',
   },

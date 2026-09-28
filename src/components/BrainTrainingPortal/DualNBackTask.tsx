@@ -451,7 +451,7 @@ export const DualNBackTask: React.FC<DualNBackTaskProps> = ({ onComplete, onCanc
               <Volume2 className="w-4 h-4 text-cyan-400 animate-pulse" />
               <span className="text-zinc-400">Audio Stream:</span>
               <span className="font-mono font-black text-lg text-white">
-                {activeLetter || '—'}
+                {activeLetter || ''}
               </span>
             </div>
           </div>

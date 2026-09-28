@@ -343,7 +343,7 @@ export const TrailMakingTask: React.FC<TrailMakingTaskProps> = ({ onComplete, on
             <div className="flex items-center gap-2 bg-zinc-900 px-3 py-1 rounded-lg border border-white/[0.06]">
               <span className="text-zinc-400">NEXT:</span>
               <span className="text-base font-mono font-black text-amber-400">
-                {sequence[currentStepIndex] || '—'}
+                {sequence[currentStepIndex] || ''}
               </span>
             </div>
 

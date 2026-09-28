@@ -71,7 +71,7 @@ export const EDUCATIONAL_ARTICLES: EducationalArticle[] = [
     author: 'Dr. Elena Vance, PhD',
     authorRole: 'Senior Cognitive Neuroscientist, Oxford NeuroDynamics Lab',
     publishDate: 'September 2026',
-    summary: 'The biological reality behind "neurons that fire together, wire together" — exploring NMDA receptor opening, calcium influx, and structural dendritic remodeling.',
+    summary: 'The biological reality behind "neurons that fire together, wire together": exploring NMDA receptor opening, calcium influx, and structural dendritic remodeling.',
     keyTakeaways: [
       'Neuroplasticity is not passive; it requires high-focus friction (elevated acetylcholine and noradrenaline).',
       'The actual synaptic consolidation occurs during Non-REM sleep and deliberate rest states.',
@@ -80,7 +80,7 @@ export const EDUCATIONAL_ARTICLES: EducationalArticle[] = [
     contentSections: [
       {
         heading: 'The Chemical Ignition: Epinephrine & Acetylcholine',
-        body: 'When you encounter a challenging cognitive task—such as the Stroop effect or a 2-Back memory match—your brainstem locus coeruleus releases noradrenaline (epinephrine in the brain) for alertness, while basal forebrain cholinergic neurons release acetylcholine. Acetylcholine acts like a neural highlighter pen, marking the specific circuits that produced the error for subsequent remodeling.'
+        body: 'When you encounter a challenging cognitive task, such as the Stroop effect or a 2-Back memory match, your brainstem locus coeruleus releases noradrenaline (epinephrine in the brain) for alertness, while basal forebrain cholinergic neurons release acetylcholine. Acetylcholine acts like a neural highlighter pen, marking the specific circuits that produced the error for subsequent remodeling.'
       },
       {
         heading: 'From Hebbian Theory to Physical Dendritic Spines',
@@ -114,7 +114,7 @@ export const EDUCATIONAL_ARTICLES: EducationalArticle[] = [
       },
       {
         heading: 'The Striatal Gatekeeper: Go vs. No-Go',
-        body: 'Focus is fundamentally not about trying harder to look at the work—it is about suppressing impulses to look away. The subthalamic nucleus and indirect striatal pathway provide the "hyperdirect brake" that stops reflexive motor reactions. Training this brake explicitly protects high-level creative focus.'
+        body: 'Focus is not simply about trying harder to look at the work. It can also involve noticing impulses to look away. The subthalamic nucleus and indirect striatal pathway contribute to motor control, but this exercise does not measure or train a specific brain circuit.'
       }
     ]
   },
@@ -136,7 +136,7 @@ export const EDUCATIONAL_ARTICLES: EducationalArticle[] = [
     contentSections: [
       {
         heading: 'The Peri-Infarct Cortex & Unmasking Silent Synapses',
-        body: 'Following an ischemic event or focal trauma, the brain experiences diaschisis—a temporary shutoff of connected healthy tissue. As edema subsides, previously silent or latent horizontal cortical connections can be unmasked through high-repetition, meaningful cognitive challenges.'
+        body: 'Following an ischemic event or focal trauma, the brain may experience diaschisis, a temporary change in activity in connected areas. As edema subsides, previously silent or latent horizontal cortical connections can be unmasked through high-repetition, meaningful cognitive challenges.'
       },
       {
         heading: 'Constraint-Induced Cognitive Therapy (CICT)',
@@ -357,7 +357,7 @@ export const RESOURCE_PROTOCOLS: ResourceProtocol[] = [
     category: 'Focus Protocol',
     duration: '90 min work + 20 min reset',
     difficulty: 'Beginner',
-    citation: 'Kleitman, N. (1982). Basic rest-activity cycle—22 years later. Sleep, 5(4), 311-317.',
+    citation: 'Kleitman, N. (1982). Basic rest-activity cycle, 22 years later. Sleep, 5(4), 311-317.',
     description: 'Biological rhythm protocol utilizing your natural 90-minute basic rest-activity cycles to maximize DLPFC output without triggering cognitive fatigue.',
     steps: [
       'Minute 0–5: Cognitive Ramp-Up (Set single clear target, eliminate physical clutter, 40Hz audio on).',
