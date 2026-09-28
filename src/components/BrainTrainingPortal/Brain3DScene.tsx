@@ -55,9 +55,10 @@ const ATLAS_MESHES = [
 
 async function loadAtlasBrain(): Promise<{ group: THREE.Group; matcap: THREE.Texture }> {
   const loader = new GLTFLoader();
+  const modelBase = `${import.meta.env.BASE_URL}models/neurotorium/`;
   const [matcap, ...models] = await Promise.all([
-    new THREE.TextureLoader().loadAsync('/models/neurotorium/atlas-matcap.png'),
-    ...ATLAS_MESHES.map(code => loader.loadAsync(`/models/neurotorium/${code}.glb`)),
+    new THREE.TextureLoader().loadAsync(`${modelBase}atlas-matcap.png`),
+    ...ATLAS_MESHES.map(code => loader.loadAsync(`${modelBase}${code}.glb`)),
   ]);
   matcap.colorSpace = THREE.SRGBColorSpace;
 
