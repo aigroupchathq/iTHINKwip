@@ -26,11 +26,14 @@ export const Navbar: React.FC<NavbarProps> = ({
 }) => {
   const audioStatus = audioEngine.getStatus();
 
-  const navLinks: { id: ActiveTab; label: string; icon: typeof House }[] = [
+  const practiceLinks: { id: ActiveTab; label: string; icon: typeof House }[] = [
     { id: 'training', label: 'Start Here', icon: House },
     { id: 'flow', label: 'Flow State Lab', icon: Sparkles },
-    { id: 'soundscape', label: 'Audio Studio', icon: Headphones },
     { id: 'tracker', label: 'My Practice', icon: Activity },
+    { id: 'soundscape', label: 'Audio Studio', icon: Headphones },
+  ];
+
+  const exploreLinks: { id: ActiveTab; label: string; icon: typeof House }[] = [
     { id: 'education', label: 'Neuroscience Atlas', icon: Brain },
     { id: 'rehab', label: 'Clinical Directory', icon: HeartPulse },
     { id: 'library', label: 'Protocol Library', icon: BookOpen },
@@ -71,15 +74,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <Square size={12} fill="currentColor" aria-hidden="true" />
                 </button>
               </div>
-            ) : (
-              <button
-                onClick={() => setActiveTab('soundscape')}
-                className="app-header__sound-button"
-              >
-                <Headphones size={15} aria-hidden="true" />
-                <span>Soundscapes</span>
-              </button>
-            )}
+            ) : null}
 
             <button
               onClick={() => setActiveTab('flow')}
@@ -92,21 +87,42 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         <nav aria-label="Main navigation" className="app-header__nav">
-          {navLinks.map(link => {
-            const isActive = activeTab === link.id;
-            const Icon = link.icon;
-            return (
-              <button
-                key={link.id}
-                onClick={() => setActiveTab(link.id)}
-                aria-current={isActive ? 'page' : undefined}
-                className={`app-header__nav-link${isActive ? ' is-active' : ''}`}
-              >
-                <Icon size={15} strokeWidth={isActive ? 2.1 : 1.8} aria-hidden="true" />
-                {link.label}
-              </button>
-            );
-          })}
+          <div className="app-header__nav-group" role="group" aria-label="Practice">
+            <span className="app-header__nav-heading">Practice</span>
+            {practiceLinks.map(link => {
+              const isActive = activeTab === link.id;
+              const Icon = link.icon;
+              return (
+                <button
+                  key={link.id}
+                  onClick={() => setActiveTab(link.id)}
+                  aria-current={isActive ? 'page' : undefined}
+                  className={`app-header__nav-link${isActive ? ' is-active' : ''}`}
+                >
+                  <Icon size={15} strokeWidth={isActive ? 2.1 : 1.8} aria-hidden="true" />
+                  {link.label}
+                </button>
+              );
+            })}
+          </div>
+          <div className="app-header__nav-group" role="group" aria-label="Explore">
+            <span className="app-header__nav-heading">Explore</span>
+            {exploreLinks.map(link => {
+              const isActive = activeTab === link.id;
+              const Icon = link.icon;
+              return (
+                <button
+                  key={link.id}
+                  onClick={() => setActiveTab(link.id)}
+                  aria-current={isActive ? 'page' : undefined}
+                  className={`app-header__nav-link${isActive ? ' is-active' : ''}`}
+                >
+                  <Icon size={15} strokeWidth={isActive ? 2.1 : 1.8} aria-hidden="true" />
+                  {link.label}
+                </button>
+              );
+            })}
+          </div>
         </nav>
       </div>
     </header>

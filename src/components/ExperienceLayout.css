@@ -1091,6 +1091,289 @@ html[data-experience="zen"] .app-header__nav-link {
   border-radius: 2rem;
 }
 
+/* Give each learning mode its own visual grammar, not just a different accent. */
+.experience-layout--matrix {
+  --experience-display: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  padding-top: clamp(1.25rem, 3vw, 2.75rem);
+}
+
+.experience-layout--matrix .experience-matrix__rail,
+.experience-layout--matrix .experience-matrix__inspector {
+  border-radius: 0.2rem;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--theme-accent) 7%, transparent), transparent 48%),
+    color-mix(in srgb, var(--theme-page) 96%, white 2%);
+  box-shadow: inset 0 2px color-mix(in srgb, var(--theme-accent) 58%, transparent);
+}
+
+.experience-layout--matrix .experience-matrix__heading h1 {
+  font-size: clamp(1.35rem, 1.75vw, 1.7rem);
+  letter-spacing: -0.08em;
+}
+
+.experience-layout--matrix .experience-matrix__node-mark {
+  border-radius: 0.2rem;
+}
+
+.experience-layout--matrix .experience-matrix__inspector-number {
+  font-size: 5rem;
+}
+
+.experience-layout--matrix .experience-layout__canvas {
+  border-left: 1px solid var(--theme-border);
+  padding-left: clamp(0.75rem, 2vw, 1.6rem);
+}
+
+.experience-layout--story {
+  width: min(100%, 82rem);
+  padding-top: clamp(2rem, 7vw, 5.5rem);
+}
+
+.experience-layout--story .experience-story {
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--theme-accent) 42%, var(--theme-border));
+  border-radius: 0;
+  padding: clamp(1.1rem, 3vw, 2rem) 0 0;
+  background: transparent;
+}
+
+.experience-layout--story .experience-story__masthead {
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+}
+
+.experience-layout--story .experience-story__progress {
+  height: 3px;
+  margin-top: 1rem;
+}
+
+.experience-layout--story .experience-story__body {
+  grid-template-columns: minmax(7rem, 0.45fr) minmax(0, 1.55fr);
+  gap: clamp(1.5rem, 7vw, 7rem);
+  margin-block: clamp(3rem, 9vw, 7rem);
+}
+
+.experience-layout--story .experience-story__chapter-mark > span {
+  font: 400 clamp(3rem, 7vw, 6rem)/0.9 Georgia, 'Times New Roman', serif;
+}
+
+.experience-layout--story .experience-story__copy h1 {
+  max-width: 14ch;
+  font: 400 clamp(2.8rem, 7.4vw, 6.5rem)/0.98 Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.065em;
+}
+
+.experience-layout--story .experience-story__copy > p:not(.experience-story__lead) {
+  max-width: 40rem;
+  font: 400 clamp(1.05rem, 1.7vw, 1.35rem)/1.8 Georgia, 'Times New Roman', serif;
+}
+
+.experience-layout--story .experience-story__chapters {
+  border-top: 1px solid var(--theme-border);
+  border-bottom: 1px solid var(--theme-border);
+  padding-block: 0.8rem;
+}
+
+.experience-layout--story .experience-story__chapters button {
+  min-height: 3rem;
+}
+
+.experience-layout--socratic {
+  width: min(100%, 78rem);
+  padding-top: clamp(2rem, 6vw, 4.5rem);
+}
+
+.experience-layout--socratic .experience-socratic {
+  max-width: none;
+  border: 0;
+  border-top: 1px solid var(--theme-border);
+  border-radius: 0;
+  padding: clamp(1.25rem, 4vw, 3rem) 0 0;
+  background: transparent;
+}
+
+.experience-layout--socratic .experience-socratic__intro {
+  max-width: 48rem;
+  margin-inline: 0;
+  text-align: left;
+}
+
+.experience-layout--socratic .experience-socratic__intro > span {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--theme-border);
+  border-radius: 999px;
+}
+
+.experience-layout--socratic .experience-socratic__intro h1 {
+  max-width: 14ch;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  letter-spacing: -0.065em;
+}
+
+.experience-layout--socratic .experience-socratic__intro p {
+  max-width: 42rem;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.experience-layout--socratic .experience-socratic__conversation {
+  grid-template-columns: minmax(15rem, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.experience-layout--socratic .experience-socratic__questions {
+  gap: 0;
+  border-top: 1px solid var(--theme-border);
+}
+
+.experience-layout--socratic .experience-socratic__questions button {
+  position: relative;
+  border: 0;
+  border-bottom: 1px solid var(--theme-border);
+  border-radius: 0;
+  padding: 1rem 1.2rem 1rem 0.75rem;
+  background: transparent;
+}
+
+.experience-layout--socratic .experience-socratic__questions button[aria-pressed="true"] {
+  box-shadow: inset 3px 0 var(--theme-accent);
+}
+
+.experience-layout--socratic .experience-socratic__answer {
+  border: 0;
+  border-left: 1px solid var(--theme-accent);
+  border-radius: 0;
+  padding: 0.5rem 0 0.5rem clamp(1.25rem, 3vw, 2.25rem);
+  background: transparent;
+}
+
+.experience-layout--socratic .experience-socratic__answer h2 {
+  max-width: 20ch;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  letter-spacing: -0.04em;
+}
+
+.experience-layout--workbench {
+  width: min(100%, 96rem);
+  padding-top: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.experience-layout--workbench .experience-workbench {
+  border: 1px solid color-mix(in srgb, var(--theme-accent) 38%, var(--theme-border));
+  border-radius: 0.2rem;
+  padding: clamp(1rem, 2.2vw, 2rem);
+  background:
+    linear-gradient(color-mix(in srgb, var(--theme-accent) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--theme-accent) 5%, transparent) 1px, transparent 1px),
+    color-mix(in srgb, var(--theme-page) 97%, white 2%);
+  background-size: 2rem 2rem;
+}
+
+.experience-layout--workbench .experience-workbench__topline {
+  align-items: end;
+  border-bottom-style: dashed;
+}
+
+.experience-layout--workbench .experience-workbench__topline h1 {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+.experience-layout--workbench .experience-workbench__density > div {
+  border-radius: 0.2rem;
+}
+
+.experience-layout--workbench .experience-workbench__density button,
+.experience-layout--workbench .experience-workbench__modules button {
+  border-radius: 0.2rem;
+}
+
+.experience-layout--workbench .experience-workbench__modules button {
+  min-height: 6.5rem;
+  border-left: 2px solid var(--theme-border);
+  background: color-mix(in srgb, var(--theme-page) 94%, transparent);
+}
+
+.experience-layout--workbench .experience-workbench__modules button[aria-pressed="true"] {
+  border-left-color: var(--theme-accent);
+}
+
+.experience-layout--workbench .experience-workbench__inspector {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  background: color-mix(in srgb, var(--theme-accent) 7%, var(--theme-page));
+}
+
+.experience-layout--zen {
+  width: min(100%, 86rem);
+  padding: clamp(1.5rem, 6vw, 5rem) clamp(1rem, 4vw, 3rem);
+}
+
+.experience-layout--zen .experience-zen {
+  min-height: min(76vh, 54rem);
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.experience-layout--zen .experience-zen__meta {
+  border-bottom: 1px solid var(--theme-border);
+  padding-bottom: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+.experience-layout--zen .experience-zen__focus {
+  width: min(100%, 52rem);
+  padding-block: clamp(4rem, 12vh, 9rem);
+}
+
+.experience-layout--zen .experience-zen__eyebrow {
+  font-size: 0.65rem;
+}
+
+.experience-layout--zen .experience-zen__focus h1 {
+  font-size: clamp(3rem, 9vw, 7.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.075em;
+}
+
+.experience-layout--zen .experience-zen__summary {
+  font-size: clamp(1rem, 1.7vw, 1.3rem);
+}
+
+.experience-layout--zen .experience-zen__actions button,
+.experience-layout--zen .experience-zen__actions a {
+  min-height: 2.8rem;
+  border-radius: 0.2rem;
+}
+
+.experience-layout--zen .experience-zen__navigation {
+  border-top: 0;
+}
+
+html[data-experience="matrix"] .app-header__nav-link {
+  border-radius: 0.2rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+}
+
+html[data-experience="story"] .app-header__nav-link {
+  border-radius: 0;
+}
+
+html[data-experience="workbench"] .app-header__nav-link {
+  border-radius: 0.2rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html[data-experience="zen"] .app-header__nav-link.is-active {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: inset 0 -2px var(--theme-accent);
+}
+
 @keyframes experience-canvas-enter {
   from { opacity: 0.84; transform: translateY(0.25rem); }
   to { opacity: 1; transform: translateY(0); }
@@ -1254,5 +1537,23 @@ html[data-experience="zen"] .app-header__nav-link {
 
   .experience-matrix__core > span {
     animation: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .experience-layout--story .experience-story__body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.7rem;
+  }
+
+  .experience-layout--socratic .experience-socratic__conversation {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+  }
+
+  .experience-layout--socratic .experience-socratic__questions,
+  .experience-layout--socratic .experience-socratic__answer {
+    min-width: 0;
   }
 }

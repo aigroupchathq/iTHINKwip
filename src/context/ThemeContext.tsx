@@ -110,15 +110,15 @@ export const THEMES: Record<AppTheme, ThemeConfig> = {
   emerald: {
     id: 'emerald',
     name: 'Quiet Grove',
-    category: 'dark',
-    accentColor: '#9bc8a8',
-    accentClass: 'text-emerald-300',
-    accentBgClass: 'bg-emerald-400',
-    borderClass: 'border-emerald-400/30',
-    bgClass: 'bg-[#0b100e]',
-    surfaceClass: 'bg-[#111a15]',
-    textPrimaryClass: 'text-white',
-    textMutedClass: 'text-zinc-400',
+    category: 'light',
+    accentColor: '#617c68',
+    accentClass: 'text-emerald-800',
+    accentBgClass: 'bg-emerald-700',
+    borderClass: 'border-stone-300',
+    bgClass: 'bg-[#f7f7f3]',
+    surfaceClass: 'bg-white',
+    textPrimaryClass: 'text-stone-900',
+    textMutedClass: 'text-stone-600',
   },
   amber: {
     id: 'amber',
@@ -200,13 +200,9 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   useEffect(() => {
     const root = document.documentElement;
     root.setAttribute('data-theme', theme);
-    if (theme === 'paper') {
-      root.classList.add('theme-light');
-      root.classList.remove('theme-dark');
-    } else {
-      root.classList.add('theme-dark');
-      root.classList.remove('theme-light');
-    }
+    const isLightTheme = THEMES[theme].category === 'light';
+    root.classList.toggle('theme-light', isLightTheme);
+    root.classList.toggle('theme-dark', !isLightTheme);
   }, [theme]);
 
   useEffect(() => {
