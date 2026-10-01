@@ -1,4 +1,4 @@
-# iTHINK Studio
+# iTHINKwip
 
 iTHINK is a human-led self-observation and cognitive practice lab. Its current
 prototype brings together brief cognitive exercises, focused-work tools,
